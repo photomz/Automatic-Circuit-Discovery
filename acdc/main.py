@@ -169,7 +169,7 @@ parser.add_argument("--max-num-epochs",type=int, default=100_000)
 parser.add_argument('--single-step', action='store_true', help='Use single step, mostly for testing')
 parser.add_argument("--abs-value-threshold", action='store_true', help='Use the absolute value of the result to check threshold')
 
-if ipython is not None:
+if True or ipython is not None:
     # We are in a notebook
     # you can put the command you would like to run as the ... in r"""..."""
     args = parser.parse_args(

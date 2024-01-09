@@ -261,6 +261,8 @@ def get_greaterthan_true_edges(model):
                 for letter in "qkv":
                     ret.append((f"blocks.{layer_idx}.hook_{letter}_input", TorchIndex([None, None, head_idx])))
                 return ret
+            
+    # what do we want to measure? of the whole model, what circuit selection is even valid?
 
     # attach input
     for GROUP in ["0305", "01", "MEARLY"]:
